@@ -35,15 +35,6 @@
 	</ItemGroup>
 
 	<ItemGroup>
-		<PackageReference Include="Nerdbank.GitVersioning" 
-											Version="3.5.107"
-											PrivateAssets="all" />
-		<PackageReference Include="Microsoft.SourceLink.GitHub"
-											Version="1.1.1"
-											PrivateAssets="all" />
-	</ItemGroup>
-
-	<ItemGroup>
 		<!--
 			HACK: This is a bug in MAUI GA/SR1 which will be fixed in SR2
 			This will remove these dependencies from being added to the generated NuGet package
