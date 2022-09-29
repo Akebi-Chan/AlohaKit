@@ -19,7 +19,7 @@ jobs:
     - name: Install .NET MAUI
       run: dotnet workload install maui
     - name: Restore dependencies
-      run: dotnet restore
+      run: dotnet restore src/AlohaKit.Gallery/AlohaKit.Gallery.csproj
     - name: Build
       run: dotnet build src/AlohaKit.Gallery/AlohaKit.Gallery.csproj -c Release -f net6.0-android /p:AndroidSigningKeyStore=myapp.keystore /p:AndroidSigningKeyAlias=key /p:AndroidSigningKeyPass="123456" /p:AndroidSigningStorePass="123456" --no-restore
     - name: Upload a Build Artifact
